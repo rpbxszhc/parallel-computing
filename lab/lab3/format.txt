@@ -1,0 +1,7 @@
+g++ -o testmpi.exe testmpi.cpp -fopenmp -l msmpi -L "C:\Program Files (x86)\Microsoft SDKs\MPI\Lib\x64" -I "C:\Program Files (x86)\Microsoft SDKs\MPI\Include"
+
+mpiexec -n 4 file
+
+gcc -g -Wall -fopenmp -o 5.1_omp_hello.exe 5.1_omp_hello.c
+
+./5.1_omp_hello.exe 4
